@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Premium Birthday - Jems</title>
+<style>
+body{margin:0;background:radial-gradient(circle at top,#16213a,#050608);color:#fff;font-family:Arial,sans-serif;overflow:hidden}
+.bg:before,.bg:after{content:"";position:absolute;inset:-20%;background:radial-gradient(circle,rgba(212,175,55,.12),transparent 60%);animation:f 12s ease-in-out infinite alternate}
+.bg:after{animation-duration:18s}
+@keyframes f{from{transform:translate(-5%,-5%) rotate(0)}to{transform:translate(5%,5%) rotate(8deg)}}
+.wrap{position:relative;z-index:2;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px}
+.card{max-width:760px;width:100%;background:rgba(255,255,255,.06);backdrop-filter:blur(18px);border:1px solid rgba(212,175,55,.3);border-radius:28px;padding:48px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.badge{display:inline-block;padding:8px 18px;border:1px solid #d4af37;border-radius:999px;color:#d4af37;letter-spacing:3px}
+h1{font-size:56px;margin:20px 0;background:linear-gradient(90deg,#bf953f,#fcf6ba,#aa771c);-webkit-background-clip:text;color:transparent}
+p{color:#cbd5e1;font-size:20px;line-height:1.7}
+button{margin-top:30px;padding:16px 42px;border:none;border-radius:999px;background:linear-gradient(90deg,#bf953f,#fcf6ba,#aa771c);font-weight:bold;cursor:pointer}
+footer{margin-top:30px;color:#888;letter-spacing:2px}
+</style></head>
+<body><div class="bg"></div><div class="wrap"><div class="card">
+<div class="badge">02 AUGUST 2026</div>
+<h1>Happy Birthday, Jems</h1>
+<p>Another year. Another milestone.<br>Keep growing. Keep building. Keep moving forward.<br>Wishing you an outstanding year ahead.</p>
+<button onclick="celebrate()">Celebrate</button>
+<footer>Crafted Exclusively for Jems</footer>
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+function celebrate(){if(window.confetti){confetti({particleCount:220,spread:90,colors:['#d4af37','#fff','#aa771c']});}}
+</script></body></html>
